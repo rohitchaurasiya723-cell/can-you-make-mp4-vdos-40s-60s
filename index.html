@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>MP4 Video Studio (40s - 60s)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-group">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+        </div>
+        <div>
+          <div class="logo-title">MP4 Video Studio</div>
+          <div class="logo-sub">40s - 60s Automated Video Generator</div>
+        </div>
+      </div>
+      <div class="header-badges">
+        <span class="badge badge-accent">H.264 / AAC MP4</span>
+        <span class="badge badge-pulse">● Ready to Play & Export</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+      <div class="hero-tag">QUESTION ANSWERED</div>
+      <h1 class="hero-heading">Can you make MP4 videos <span class="gradient-text">in 40s – 60s?</span></h1>
+      <p class="hero-lead">
+        <strong>YES!</strong> We can create full high-definition 40s to 60s MP4 videos with dynamic motion graphics,
+        scene transitions, synchronized procedural music tracks, and universal H.264/AAC compatibility.
+      </p>
+
+      <div class="hero-pills">
+        <div class="pill-item">
+          <span class="pill-icon">⏱️</span>
+          <span><strong>40s – 60s</strong> Sweet Spot</span>
+        </div>
+        <div class="pill-item">
+          <span class="pill-icon">📱</span>
+          <span><strong>9:16 & 16:9</strong> Multi-Format</span>
+        </div>
+        <div class="pill-item">
+          <span class="pill-icon">🎵</span>
+          <span><strong>Stereo Sound</strong> Synthesized Beat</span>
+        </div>
+        <div class="pill-item">
+          <span class="pill-icon">⚡</span>
+          <span><strong>Instant</strong> Download</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <nav class="tab-nav">
+      <button class="tab-btn active" data-tab="tab-player">
+        <span class="tab-icon">▶</span>
+        <span>Watch 45s Demo MP4</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-studio">
+        <span class="tab-icon">🎨</span>
+        <span>Interactive Video Studio</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-cli">
+        <span class="tab-icon">💻</span>
+        <span>FFmpeg & Code Automation</span>
+      </button>
+    </nav>
+
+    <!-- Tab 1: Video Player & Showcase -->
+    <section id="tab-player" class="tab-content active">
+      <div class="grid-2col">
+        <!-- Video Player Card -->
+        <div class="card player-card">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Generated 45-Second MP4 Video</h2>
+              <p class="card-desc">720x1280 • 30 FPS • H.264 Video • 124 BPM Stereo AAC Audio</p>
+            </div>
+            <a href="sample_45s.mp4" download="antigravity_video_45s.mp4" class="btn btn-primary" id="downloadDemoBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download MP4</span>
+            </a>
+          </div>
+
+          <div class="video-wrapper">
+            <video id="demoVideo" playsinline preload="metadata" controls poster="assets/poster.png">
+              <source src="sample_45s.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="scene-chapters">
+            <div class="chapter-label">Jump to Scene Markers:</div>
+            <div class="chapter-chips">
+              <button class="chip-btn" data-seek="0">
+                <span class="chip-time">0:00</span>
+                <span>Scene 1: The Hook</span>
+              </button>
+              <button class="chip-btn" data-seek="11">
+                <span class="chip-time">0:11</span>
+                <span>Scene 2: Retention</span>
+              </button>
+              <button class="chip-btn" data-seek="23">
+                <span class="chip-time">0:23</span>
+                <span>Scene 3: Pipeline</span>
+              </button>
+              <button class="chip-btn" data-seek="35">
+                <span class="chip-time">0:35</span>
+                <span>Scene 4: Launch CTA</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Specs & Info Card -->
+        <div class="card specs-card">
+          <h2 class="card-title">Why 40s – 60s MP4 Videos?</h2>
+          <p class="card-desc">The optimal length for virality across all social platforms.</p>
+
+          <div class="stats-list">
+            <div class="stat-box">
+              <div class="stat-icon-wrap cyan">
+                📈
+              </div>
+              <div>
+                <div class="stat-value">+380% Watch Time</div>
+                <div class="stat-label">Videos between 40s-60s hold viewers longer, qualifying for highest algorithmic boost on TikTok, Instagram Reels, and YouTube Shorts.</div>
+              </div>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-icon-wrap magenta">
+                🎯
+              </div>
+              <div>
+                <div class="stat-value">High Story Arc Delivery</div>
+                <div class="stat-label">40-60s provides enough time to deliver a compelling Hook (0-10s), Problem & Value (10-35s), and a clear Call To Action (35-60s).</div>
+              </div>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-icon-wrap gold">
+                ⚡
+              </div>
+              <div>
+                <div class="stat-value">Universal H.264 Playback</div>
+                <div class="stat-label">MP4 with H.264 and AAC audio plays natively on iOS Safari, Android, WhatsApp, Telegram, QuickTime, VLC, and all web browsers.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-checklist">
+            <div class="check-item"><span>✓</span> Fast-Start flag enabled (`+faststart`) for instant streaming</div>
+            <div class="check-item"><span>✓</span> 9:16 vertical (Reels/Shorts) & 16:9 widescreen formats</div>
+            <div class="check-item"><span>✓</span> Zero copyright claims — 100% procedural synthesized audio</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 2: Interactive Video Studio (Generate in Browser) -->
+    <section id="tab-studio" class="tab-content">
+      <div class="grid-2col studio-layout">
+        <!-- Studio Controls -->
+        <div class="card studio-controls">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Interactive Video Generator</h2>
+              <p class="card-desc">Customize text, duration, colors, and export your video.</p>
+            </div>
+            <span class="badge badge-accent">Live Canvas</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Duration</label>
+            <div class="duration-selector">
+              <button class="btn-toggle active" data-duration="45">45 Seconds</button>
+              <button class="btn-toggle" data-duration="40">40 Seconds</button>
+              <button class="btn-toggle" data-duration="50">50 Seconds</button>
+              <button class="btn-toggle" data-duration="60">60 Seconds</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Color Theme</label>
+            <div class="theme-selector">
+              <button class="theme-pill active" data-theme="cyberpunk">
+                <span class="dot cyan-dot"></span> Cyberpunk Neon
+              </button>
+              <button class="theme-pill" data-theme="sunset">
+                <span class="dot orange-dot"></span> Solar Sunset
+              </button>
+              <button class="theme-pill" data-theme="emerald">
+                <span class="dot green-dot"></span> Emerald Tech
+              </button>
+              <button class="theme-pill" data-theme="midnight">
+                <span class="dot purple-dot"></span> Midnight Violet
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Scene Content</label>
+            <div class="accordion">
+              <div class="acc-item active">
+                <div class="acc-header">Scene 1: Hook Headline</div>
+                <div class="acc-body">
+                  <input type="text" id="s1Hook" class="text-input" value="Unlock AI Video Generation">
+                  <input type="text" id="s1Sub" class="text-input mt-1" value="Create 40s - 60s MP4s in Seconds">
+                </div>
+              </div>
+
+              <div class="acc-item">
+                <div class="acc-header">Scene 2: Key Advantage</div>
+                <div class="acc-body">
+                  <input type="text" id="s2Title" class="text-input" value="Built For Maximum Reach">
+                  <input type="text" id="s2Stat" class="text-input mt-1" value="+400% Retention on Reels & Shorts">
+                </div>
+              </div>
+
+              <div class="acc-item">
+                <div class="acc-header">Scene 3: Deep Dive</div>
+                <div class="acc-body">
+                  <input type="text" id="s3Title" class="text-input" value="Automated Code Pipeline">
+                  <input type="text" id="s3Detail" class="text-input mt-1" value="Zero Manual Editing Required">
+                </div>
+              </div>
+
+              <div class="acc-item">
+                <div class="acc-header">Scene 4: Call To Action</div>
+                <div class="acc-body">
+                  <input type="text" id="s4Cta" class="text-input" value="Start Creating Today">
+                  <input type="text" id="s4Handle" class="text-input mt-1" value="@YourBrandName • Follow For More">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Soundtrack</label>
+            <div class="audio-toggle-group">
+              <label class="radio-label">
+                <input type="radio" name="soundtrack" value="synthwave" checked>
+                <span>124 BPM Synthwave Beat</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="soundtrack" value="ambient">
+                <span>Ambient Pulse</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="soundtrack" value="none">
+                <span>Mute Audio</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Export Action -->
+          <div class="export-box">
+            <button id="recordExportBtn" class="btn btn-export">
+              <span class="btn-export-icon">⏺</span>
+              <span id="exportBtnText">Export & Download Video</span>
+            </button>
+            <div id="exportProgressWrap" class="progress-bar-wrap hidden">
+              <div class="progress-bar-info">
+                <span id="exportStatusText">Recording canvas stream...</span>
+                <span id="exportPercentText">0%</span>
+              </div>
+              <div class="progress-bar-track">
+                <div id="exportProgressBar" class="progress-bar-fill" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Studio Live Canvas Viewport -->
+        <div class="card canvas-card">
+          <div class="canvas-header">
+            <div class="live-indicator">
+              <span class="pulse-dot"></span>
+              <span>LIVE RENDER</span>
+            </div>
+            <div id="canvasTimecode" class="canvas-timecode">00:00 / 00:45</div>
+          </div>
+
+          <div class="canvas-container">
+            <canvas id="studioCanvas" width="720" height="1280"></canvas>
+          </div>
+
+          <!-- Canvas Transport Controls -->
+          <div class="transport-controls">
+            <button id="playPauseBtn" class="btn btn-icon">
+              <span id="playPauseIcon">▶</span>
+            </button>
+            <input type="range" id="timelineSlider" class="timeline-range" min="0" max="45" step="0.05" value="0">
+            <button id="restartBtn" class="btn btn-icon" title="Restart">
+              <span>⏮</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 3: CLI & Server Pipeline -->
+    <section id="tab-cli" class="tab-content">
+      <div class="card cli-card">
+        <h2 class="card-title">How To Generate 40s - 60s MP4s with Code</h2>
+        <p class="card-desc">Run this script in terminal or server to render MP4s automatically.</p>
+
+        <div class="code-block-header">
+          <span>Terminal Command</span>
+          <button class="copy-btn" onclick="navigator.clipboard.writeText('node generate-video.js 45 public/my_video.mp4')">Copy</button>
+        </div>
+        <pre class="code-block"><code># Generate a 45-second vertical MP4 with music and graphics:
+node generate-video.js 45 public/my_video.mp4
+
+# Generate a 60-second video:
+node generate-video.js 60 public/my_video_60s.mp4</code></pre>
+
+        <h3 class="mt-2 text-white font-bold">FFmpeg Command Used Internally:</h3>
+        <pre class="code-block"><code>ffmpeg -y \
+  -f rawvideo -vcodec rawvideo -s 720x1280 -pix_fmt rgba -r 30 -i - \
+  -i soundtrack.wav \
+  -c:v libx264 -pix_fmt yuv420p -preset fast -crf 21 \
+  -c:a aac -b:a 192k \
+  -movflags +faststart \
+  -shortest output.mp4</code></pre>
+
+        <div class="info-callout">
+          <div class="callout-title">💡 Why `-movflags +faststart` matters:</div>
+          <p>This moves the MP4 atom header (moov) to the beginning of the file, allowing iOS Safari, web browsers, and social networks to start playing the 45s-60s video immediately before the entire file finishes downloading!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-container">
+      <p>Autonomous AI MP4 Video Studio • Ready for TikTok, YouTube Shorts & Instagram Reels</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
